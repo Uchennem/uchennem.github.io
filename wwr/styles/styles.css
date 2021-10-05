@@ -1,0 +1,23 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    background-color: orange;
+    padding: o 150px 50px 10px;
+    border: 1px solid black;
+    margin: 50px;
+}
+
+.latin {
+    font-size: 45px;
+    color: purple;
+    text-align: center;
+    padding: 30px;
+    max-width: 500px;
+    line-height: 2.2em;
+}
+
+#Fancy {
+    font-family: 'Ephesis', cursive;
+}
