@@ -11,6 +11,7 @@ nav a {
     text-decoration: none;
     color: white;
     font-family: Nunito, sans-serif;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -21,7 +22,7 @@ nav a:hover {
 
 #hero-msg h1 {
     text-align: center;
-
+    font-family: Julee;
 }
 
 #hero-msg h4 {
@@ -48,6 +49,9 @@ main section {
 body {
     background-color: white;
     font-family: Nunito, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -60,12 +64,20 @@ header {
     background-color: white;
     text-decoration: none;
     font-family: Nunito, sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .join {
     background-color: white;
     text-decoration: none;
     font-family: Nunito, sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover {
@@ -83,6 +95,8 @@ header {
 .msg {
     background-color: #519872;
     font-family: Nunito, sans-serif;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 footer {
@@ -93,6 +107,7 @@ footer {
 nav a {
     color: white;
     font-family: Nunito, sans-serif;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -103,6 +118,8 @@ nav a:hover {
 .home-title {
     color: #0B132B;
     font-family: Nunito, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
@@ -112,12 +129,20 @@ h4 {
 
 .msg h2 {
     color: #0B132B;
-
+    font-family: Julee;
+    margin: 0;
 }
 
 .msg p {
     color: #0B132B;
     font-family: Nunito, sans-serif;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+footer {
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer h3 {
@@ -135,14 +160,43 @@ footer a:hover {
     font-family: Nunito, sans-serif;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 .logo {
     width: 80px;
 }
 
+#logo_link {
+    padding-top: 5px;
+}
+
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
     width: 100%;
+}
+
+.card-img {
+    border: 10px solid #519872;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+.rivers-card {
+    margin: 200px 0;
+}
+
+.camping-card {
+    margin: 200px 0;
+}
+
+.rapids-card {
+    margin: 200px 0;
 }
