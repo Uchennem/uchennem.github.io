@@ -1,97 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=Nunito:wght@300&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
-
+    font-family: Nunito, sans-serif;
 }
 
 nav a {
     text-align: center;
     text-decoration: none;
     color: white;
+    font-family: Nunito, sans-serif;
 }
 
 nav a:hover {
     background-color: white;
     color: #f42c04;
+    font-family: Nunito, sans-serif;
 }
 
 #hero-msg h1 {
     text-align: center;
+
 }
 
 #hero-msg h4 {
     text-align: center;
+    font-family: Nunito, sans-serif;
 }
 
 .button-box {
     text-align: center;
+    font-family: Nunito, sans-serif;
 }
 
 main section {
     text-align: center;
+    font-family: Nunito, sans-serif;
 }
 
 #background {
     height: 725px;
     background-color: #519872;
+    font-family: Nunito, sans-serif;
 }
 
 body {
     background-color: white;
+    font-family: Nunito, sans-serif;
 }
 
 
 header {
     background-color: #0B132B;
+    font-family: Nunito, sans-serif;
 }
 
 .book {
     background-color: white;
     text-decoration: none;
-
+    font-family: Nunito, sans-serif;
 }
 
 .join {
     background-color: white;
     text-decoration: none;
+    font-family: Nunito, sans-serif;
 }
 
 .book:hover {
     background-color: #0B132B;
     color: #f42c04;
+    font-family: Nunito, sans-serif;
 }
 
 .join:hover {
     background-color: #0B132B;
     color: #f42c04;
+    font-family: Nunito, sans-serif;
 }
 
 .msg {
     background-color: #519872;
+    font-family: Nunito, sans-serif;
 }
 
 footer {
     background-color: white;
+    font-family: Nunito, sans-serif;
 }
 
 nav a {
     color: white;
-
+    font-family: Nunito, sans-serif;
 }
 
 nav a:hover {
     color: #f42c04;
-
+    font-family: Nunito, sans-serif;
 }
 
 .home-title {
     color: #0B132B;
-
+    font-family: Nunito, sans-serif;
 }
 
 h4 {
     color: #0B132B;
-
+    font-family: Nunito, sans-serif;
 }
 
 .msg h2 {
@@ -101,21 +117,22 @@ h4 {
 
 .msg p {
     color: #0B132B;
-
+    font-family: Nunito, sans-serif;
 }
 
 footer h3 {
     color: #0B132B;
+    font-family: Nunito, sans-serif;
 }
 
 footer a {
     color: #0B132B;
-
+    font-family: Nunito, sans-serif;
 }
 
 footer a:hover {
     color: #f42c04;
-
+    font-family: Nunito, sans-serif;
 }
 
 .logo {
