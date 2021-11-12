@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=Nunito:wght@300&display=swap');
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #0B132B;
+    margin-top: -10px;
+}
+
+.logo {
+    width: 80px;
+    justify-self: center;
+    align-self: center;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-family: Nunito, sans-serif;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #f42c04;
+    font-family: Nunito, sans-serif;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-img {
+    width: 100%;
+
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+.button-box {
+    text-align: center;
+    font-family: Nunito, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: Nunito;
+    font-size: 44px;
+    color: white;
+}
+
+header {
+    background-color: #0B132B;
+    font-family: Nunito, sans-serif;
+}
+
+.book {
+    background-color: white;
+    text-decoration: none;
+    font-family: Nunito, sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.book:hover {
+    background-color: #0B132B;
+    color: #f42c04;
+    font-family: Nunito, sans-serif;
+}
+
+h4 {
+    text-align: center;
+    font-family: Nunito, sans-serif;
+    color: white;
+    font-size: 22px;
+}
+
+#background {
+    height: 725px;
+    background-color: #0B132B;
+    font-family: Nunito, sans-serif;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+
+h2 {
+    text-align: center;
+    font-family: Nunito;
+    font-size: 30px;
+    color: #f42c04;
+}
+
+p {
+    font-family: Nunito;
+    font-size: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.arizona,
+.utah,
+.idaho {
+    display: flex;
+
+}
+
+.arizona,
+.idaho {
+    flex-direction: row-reverse;
+}
+
+#arizona-img {
+    width: 40vw;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #519872;
+}
+
+#grand-canyon {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#utah-img {
+    width: 40vw;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #519872;
+}
+
+#gray-canyon {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#idaho-img {
+    width: 40vw;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #519872;
+}
+
+#salmon-river {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+footer {
+    background-color: #519872;
+    font-family: Nunito, sans-serif;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+footer h3 {
+    color: #0B132B;
+    font-family: Nunito, sans-serif;
+}
+
+footer a {
+    color: #0B132B;
+    font-family: Nunito, sans-serif;
+}
+
+footer a:hover {
+    color: #f42c04;
+    font-family: Nunito, sans-serif;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
