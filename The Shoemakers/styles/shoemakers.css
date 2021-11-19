@@ -3,6 +3,10 @@
 body {
     background-color: #abc4ab;
     font-family: lato, Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
@@ -66,8 +70,11 @@ nav a:hover {
 }
 
 .home-grid_2 {
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 32px;
 }
 
 .intro {
@@ -76,6 +83,37 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+}
+
+.first {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.second {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.third {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.image_1,
+.image_2,
+.image_3 {
+    width: 25vw;
+    height: 200px;
 }
 
 #intro_interactive {
@@ -89,9 +127,9 @@ ul {
     padding-bottom: 30px;
 }
 
-.button_1,
-.button_2,
-.button_3 {
+#button_1,
+#button_2,
+#button_3 {
     padding: 5px 5px;
     margin: 30px 5px;
     width: 150px;
@@ -111,6 +149,10 @@ h4 {
     font-size: 20px;
     font-family: zen antique, Arial, Helvetica, sans-serif;
     padding-left: 36px;
+}
+
+main {
+    flex: 1;
 }
 
 .main_image {
@@ -189,12 +231,13 @@ h4 {
     font-weight: bold;
     font-size: 30px;
     padding: 8px;
-    border-radius: 10 px;
+    border-radius: 20px;
     background-color: #037171;
 }
 
 .join:hover {
     color: white;
+    box-shadow: 5px 10px #95190c;
 }
 
 #convince {
@@ -207,7 +250,6 @@ h4 {
 footer {
     background-color: #95190c;
     font-family: Nunito, sans-serif;
-    margin-top: 200px;
     display: flex;
     justify-content: space-around;
 }
@@ -215,11 +257,6 @@ footer {
 footer {
     padding: 25px 50px;
     margin-top: 200px;
-}
-
-#push {
-    padding: 25px 50px;
-    margin-top: 35em;
 }
 
 footer h3 {
@@ -239,4 +276,50 @@ footer a:hover {
 
 footer .social img {
     padding-top: 15px;
+}
+
+.speak {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: block;
+    text-align: center;
+}
+
+.name input,
+.email input,
+.message textarea {
+    font-family: lato, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+.name label,
+.email label,
+.message label {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: lato, Arial, Helvetica, sans-serif;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg {
+    margin-bottom: -100px;
+}
+
+#msg_1 {
+    background-color: #037171;
+    width: 183px;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 16px;
+    font-weight: bold;
+    color: white;
 }
