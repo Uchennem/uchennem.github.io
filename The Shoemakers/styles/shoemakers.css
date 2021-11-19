@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Zen+Antique&display=swap');
+
+body {
+    background-color: #abc4ab;
+    font-family: lato, Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px auto;
+    background-color: #95190c;
+    color: white;
+    margin-top: -8px;
+    width: 100%;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    align-items: center;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: lato, sans-serif;
+    padding: 35px;
+}
+
+nav a:hover {
+    color: #abc4ab;
+    font-family: lato, sans-serif;
+}
+
+.logo {
+    width: 80px;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+    padding: 3px 11px 4px 12px;
+}
+
+#form {
+    margin: 0 auto;
+    width: 20em;
+    padding: 1em;
+    border: 1px solid #abc4ab;
+    border-radius: 1em;
+}
+
+#query {
+    width: 75%;
+}
+
+#button {
+    background-color: #037171;
+    color: white;
+}
+
+.home-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.home-grid_2 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.intro {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#intro_interactive {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding-bottom: 30px;
+}
+
+.button_1,
+.button_2,
+.button_3 {
+    padding: 5px 5px;
+    margin: 30px 5px;
+    width: 150px;
+    height: 50px;
+    background-color: #037171;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 2em;
+    padding: 4px 38px;
+    font-family: zen antique, Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: zen antique, Arial, Helvetica, sans-serif;
+    padding-left: 36px;
+}
+
+.main_image {
+    grid-column: 2/3;
+    width: 50vw;
+}
+
+.shoe_type {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #037171;
+    background-color: #95190c;
+}
+
+.formal_shoes_image {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 90%;
+    height: 80%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.F_shoes {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-left: 297px;
+    color: #000;
+    text-decoration: none;
+}
+
+.F_shoes:hover {
+    color: white;
+}
+
+.semi_formal_shoes_image {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 90%;
+    height: 80%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.s-formal_shoes {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 297px;
+    color: #000;
+    text-decoration: none;
+}
+
+.s-formal_shoes:hover {
+    color: white;
+}
+
+.button-box {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: zen antique, Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+#bestest {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.join {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 8px;
+    border-radius: 10 px;
+    background-color: #037171;
+}
+
+.join:hover {
+    color: white;
+}
+
+#convince {
+    font-family: zen antique, Arial, Helvetica, sans-serif;
+    color: #95190c;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: #95190c;
+    font-family: Nunito, sans-serif;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+#push {
+    padding: 25px 50px;
+    margin-top: 35em;
+}
+
+footer h3 {
+    color: white;
+    font-family: Nunito, sans-serif;
+}
+
+footer a {
+    color: white;
+    font-family: Nunito, sans-serif;
+}
+
+footer a:hover {
+    color: #abc4ab;
+    font-family: Nunito, sans-serif;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
