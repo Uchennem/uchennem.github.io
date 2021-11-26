@@ -1,0 +1,19 @@
+body {
+    background-color: brown;
+    background-image: url('images/the\ one.jpg')
+}
+
+h1 {
+    color: white;
+    padding-top: 86px;
+    padding-left: 40px;
+    font-size: 4em;
+}
+
+.liahona {
+    width: 30vw;
+    border-radius: 15vw;
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+}
