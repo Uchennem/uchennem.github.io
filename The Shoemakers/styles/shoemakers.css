@@ -236,7 +236,6 @@ main {
     padding: 8px;
     border-radius: 20px;
     background-color: #037171;
-    margin-left: 24em;
 }
 
 .join:hover {
@@ -248,7 +247,7 @@ main {
     font-family: zen antique, Arial, Helvetica, sans-serif;
     color: #95190c;
     text-align: center;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
 }
 
 footer {
