@@ -146,6 +146,11 @@ h1 {
     font-family: zen antique, Arial, Helvetica, sans-serif;
 }
 
+h2 {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
 h4 {
     font-weight: bold;
     font-size: 20px;
@@ -215,6 +220,10 @@ main {
     color: white;
 }
 
+p {
+    font-size: 20px;
+}
+
 .button-box {
     font-weight: bold;
     font-size: 20px;
@@ -234,7 +243,7 @@ main {
     font-weight: bold;
     font-size: 30px;
     padding: 8px;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: #037171;
 }
 
