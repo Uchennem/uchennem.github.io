@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-family: open sans, monospace;
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bolder;
+    color: royalblue;
+}
+
+.content_left {
+    margin: 0 auto;
+    grid-row: 1/2;
+}
+
+.content_right {
+    grid-row: 2/3;
+}
+
+.london {
+    width: 50vw;
+}
+
+.details {
+    margin-bottom: 25px;
+}
+
+ul {
+    list-style: none;
+}
+
+#button_1,
+#button_2,
+#button_3 {
+    font-family: open sans, monospace;
+    margin-left: -42px;
+    width: 25em;
+    padding: 1em;
+    border: 1px solid #abc4ab;
+    border-radius: 5px;
+}
+
+#button_3 {
+    color: white;
+    background-color: royalblue;
+}
+
+.name,
+.email {
+    padding: 5px;
+}
+
+.button {
+    padding-top: 10px;
+}
