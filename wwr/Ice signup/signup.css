@@ -5,6 +5,7 @@ body {
     grid-template-rows: 1fr 1fr;
     font-family: open sans, monospace;
     font-size: 24px;
+    color: lightgray;
 }
 
 h1 {
@@ -24,6 +25,8 @@ h1 {
 
 .london {
     width: 50vw;
+    filter: opacity(50%);
+    margin: 0 auto;
 }
 
 .details {
@@ -47,6 +50,7 @@ ul {
 
 #button_3 {
     color: white;
+    font-size: 15px;
     background-color: royalblue;
 }
 
@@ -57,4 +61,5 @@ ul {
 
 .button {
     padding-top: 10px;
+    font-size: 10px;
 }
