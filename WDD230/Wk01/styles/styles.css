@@ -1,16 +1,16 @@
 
 img {
     width: 150px;
-    height: 200px;
+    /* height: 200px; */
     box-shadow: 5px 5px 10px darkgreen;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 2% 26%;
 }
 #content {
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 4;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -25,6 +25,7 @@ header {
     padding: 20px 0;
     border-radius: 15px;
     box-shadow: 5px 5px 10px darkgreen;
+    padding: 4% 0;
 }
 
 h1 {
@@ -61,4 +62,5 @@ footer {
 
 #foot {
     font-style: normal;
+    color: white;
 }

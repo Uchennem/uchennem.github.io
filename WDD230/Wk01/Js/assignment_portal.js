@@ -1,3 +1,3 @@
 let currentdate = document.lastModified;
-document.querySelector('h1').textContent = currentdate;
-document.getElementById('modified').textContent = `Last Updated: ${currentdate}`;
+document.querySelector('h3').textContent = currentdate;
+document.getElementById('foot').textContent = `Last Updated: ${currentdate}`;
