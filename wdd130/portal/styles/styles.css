@@ -59,6 +59,10 @@ footer {
     box-shadow: 5px 5px 10px darkgreen;
 }
 
+h2 {
+    font-size: 1em;
+    font-style: normal;
+}
 #foot {
     font-style: normal;
 }
