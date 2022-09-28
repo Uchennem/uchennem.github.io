@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Zen+Antique&display=swap');
+
+
+#content {
+    margin: 0 auto;
+    text-align: center;
+    font-family: lato, monospace, sans-serif;
+    width: 100%;
+}
+
+.view_type {
+    font-size: xx-large;
+    background-color: white;
+    text-align: left;
+    color: black;
+}
+
+a {
+    display: block;
+    padding: 0px 0px 10px 0px;
+}
+
+h1 {
+    margin:0 auto;
+    background-color: rgb(35, 51, 97);
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    width: 100%;
+}
+footer {
+    text-align: center;
+    background-color: rgb(35, 51, 97);
+    padding: 1px;
+}
+
+
+@media screen and (min-width: 700px) {
+    main {
+        display: grid;
+        grid-gap: 45px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    img {
+        max-width: 400px;
+        width: 80%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    main {
+        display: grid;
+        grid-gap: 45px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    img {
+        max-width: 400px;
+        width: 80%;
+    }
+}
