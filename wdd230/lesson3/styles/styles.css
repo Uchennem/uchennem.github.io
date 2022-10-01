@@ -96,12 +96,41 @@ nav a:hover {
     background-color: var(--accent2-color);
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 500px) {
     nav {
         display: flex;
+        flex-direction: column;
     }
+
     nav a {
         flex: 1 1 100%;
+    }
+    
+    #target_audience {
+        display: flex;
+        flex-direction: column;
+    }
+    .bus_class, .sights {
+        flex: 1 1 100%;
+    }
+    tbody {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .table_1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table_2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colors td {
+        width: auto;
+        height: auto;
     }
 
     .logo_header {
@@ -116,9 +145,6 @@ nav a:hover {
 
 
 @media screen and (min-width: 1200px) {
-    .logo_header {
-        width: 26px;
-        border-radius: 50%;
-    }
+
     
 }
