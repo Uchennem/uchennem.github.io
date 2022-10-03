@@ -40,7 +40,7 @@ buttonElement.addEventListener("click", copyInput);
 
 const numbs = [1, 2, 3, 4, 5];
 
-document.querySelector('#output').textContent = nums;
+document.querySelector('#output').textContent = numbs;
 function getEvens(item) {
     if (item % 2 === 0) {
         return item;
