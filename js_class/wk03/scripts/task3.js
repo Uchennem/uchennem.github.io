@@ -26,8 +26,52 @@ function add (numb1, numb2)
 
 // Step 9: Test all of the mathematical functionality of the task3.html page.
 
-function addNumbers ()
 
+
+function addNumbers () {
+    let inputElement1 = parseInt(document.getElementById("addend1").value);
+    let inputElement2 = parseInt(document.getElementById("addend2").value);
+    let summation = add (inputElement1, inputElement2);
+    document.getElementById('sum').value = summation;
+}
+
+document.getElementById('addNumbers').addEventListener('click', addNumbers);
+
+
+const subtract = function (numb1, numb2)
+    {
+        result = numb1 - numb2;
+        return result
+    }
+function subtractNumbers () {
+    let inputElement1 = parseInt(document.getElementById("minuend").value);
+    let inputElement2 = parseInt(document.getElementById("subtrahend").value);
+    let subtraction = subtract (inputElement1, inputElement2);
+    document.getElementById('difference').value = subtraction;
+}
+
+document.getElementById('subtractNumbers').addEventListener('click', subtractNumbers);
+
+
+const multiply = (numb1, numb2) => numb1 * numb2;
+const multiplyNumbers = () => {
+    let inputElement1 = parseInt(document.getElementById('factor1').value);
+    let inputElement2 = parseInt(document.getElementById('factor2').value);
+    let result = multiply(inputElement1, inputElement2);
+    document.getElementById('product').value = result;
+}
+
+document.getElementById('multiplyNumbers').addEventListener('click', multiplyNumbers);
+
+const divide = (numb1, numb2) => numb1 / numb2;
+const divideNumbers = () => {
+    let inputElement1 = parseInt(document.getElementById('dividend').value);
+    let inputElement2 = parseInt(document.getElementById('divisor').value);
+    let result = divide(inputElement1, inputElement2);
+    document.getElementById('quotient').value = result;
+}
+
+document.getElementById('divideNumbers').addEventListener('click', divideNumbers);
 /* BUILT-IN METHODS */
 
 // Step 1: Declare and instantiate a variable of type Date to hold the current date
@@ -39,6 +83,9 @@ function addNumbers ()
 // Step 4: Assign the current year variable to an HTML form element with an ID of year
 
 
+let date = new Date();
+let year = date.getFullYear();
+document.getElementById('year').textContent = `${year}`;
 /* ARRAY METHODS */
 
 // Step 1: Declare and instantiate an array variable to hold the numbers 1 through 25
@@ -54,3 +101,12 @@ function addNumbers ()
 // Step 6: Use the map array method to multiple each element in the array variable by 2 and assign the result to the HTML element with an ID of "multiplied"
 
 // Step 7: Use the map and reduce array methods to sum the array elements after multiplying each element by two.  Assign the result to the HTML element with an ID of "sumOfMultiplied"
+
+
+const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25];
+document.querySelector('#array').textContent = numbers;
+document.querySelector('#odds').textContent = numbers.filter(number => number % 2);
+document.querySelector('#evens').textContent = numbers.filter(number => number % 2 === 0);
+document.querySelector('#sumOfArray').textContent = numbers.reduce((sum, number) => sum + number, 0);
+document.querySelector('#multiplied').textContent = numbers.map(number => number * 2);
+document.querySelector('#sumOfMultiplied').textContent = numbers.map(number => number * 2).reduce((sum, number) => sum + number, 0);
