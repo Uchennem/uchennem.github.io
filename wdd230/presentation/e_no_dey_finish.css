@@ -1,7 +1,14 @@
+/* .grandfather {
+  padding: 50px;
+  background-color: #7b745f;
+  position: relative;
+  height: 250vh;
+} */
+
 .parent {
     padding: 5px;
     background-color: #5f727b;
-    position: ;
+    position: relative;
     height: 200vh;
   }
   
@@ -11,12 +18,15 @@
   
   .child-one {
     background-color: rgb(116, 255, 116);
-    position: fixed;
-    top: 0px;
+    position: sticky;
+    top: 5px;
   }
   
   .child-two {
     background-color: rgb(248, 117, 117);
+    /* position: relative;
+    top: 10px;
+    right: 0; */
   }
   
   .child-three {
