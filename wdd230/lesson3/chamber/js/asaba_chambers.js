@@ -12,6 +12,15 @@ function toggleMenu() {
     console.log("it worked")
 }
 
+let dayNumber = date.getDay();
+let banner = document.querySelector('.banner');
+
+console.log(dayNumber);
+
+if(dayNumber == 1 || dayNumber == 2){
+    banner.classList.add('showBanner');
+}
+
 const clickChecker = document.getElementById("hamburger")
 clickChecker.onclick = toggleMenu;
 

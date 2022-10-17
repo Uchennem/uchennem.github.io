@@ -109,6 +109,10 @@ nav ul li:hover {
     margin: 0 5%;
 }
 
+#bannertext {
+    color: white;
+}
+
 .central {
     max-width: 1500px;
     width: 90%;
@@ -323,6 +327,7 @@ footer {
         grid-column: 2/3;
         grid-row: 1/2;
     }
+
 
     nav  ul.open{
         display: block;
