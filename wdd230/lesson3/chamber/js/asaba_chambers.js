@@ -11,17 +11,19 @@ function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
     console.log("it worked")
 }
+const clickChecker = document.getElementById("hamburger")
+clickChecker.onclick = toggleMenu;
+
 
 let dayNumber = date.getDay();
-let banner = document.querySelector('.banner');
+let banner = document.querySelector('#bannertext');
 
 console.log(dayNumber);
 
-if(dayNumber == 1 || dayNumber == 2){
-    banner.classList.add('showBanner');
-}
 
-const clickChecker = document.getElementById("hamburger")
-clickChecker.onclick = toggleMenu;
+if(dayNumber == 1 || dayNumber == 2){
+    document.querySelector('#bannertext').
+    style.display = 'block';
+}
 
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
