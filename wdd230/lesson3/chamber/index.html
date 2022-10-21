@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This a site plan for Asaba chamber of commerce website">
+    <meta name="description" content="This Asaba chamber of commerce website, index page">
     <title>Asaba Chamber of Commerce</title>
     <link rel="stylesheet" href='../styles/normalize.css'>
     <link rel="stylesheet" href='../chamber/css/styles.css'>
+    <link rel="favicon" href="./images/favicon.ico">
 </head>
 <body>
    <div class="content">
         <header>
             <div class="header_notes">
                 <a id= 'logo_link' href='index.html'>
-                <img class='logo_header' src='../images/Chambers_logo.png' alt='Asaba chambers Logo'></a>
+                <img class='logo_header' src='./images/webPChambers_logo.webp' alt='Asaba chambers Logo WebP'></a>
                 <p><span class="nav_sitename">Asaba</span><br> chamber of commerce</p>
             </div>
             <nav>
@@ -40,7 +41,12 @@
 
         <main class="central">
             <section class="hero">
-                <img id="hero_img" src="./images/rsz_asaba-2.jpg" alt="Interbau Round-a-bout">
+                <img
+                    srcset="./images/240pxtinywdd230-org.jpg 240w, ./images/480pxtinywdd230-org.jpg 480w, ./images/800pxtinywdd230-org.jpg 800w"
+                    sizes="(max-width: 400px) 240px, (max-width: 900px) 480px,
+                            800px"
+                    src="elva-fairy-800w.jpg"
+                    alt="Elva dressed as a fairy">
                 <h1>Welcome to Asaba<br><span id="jewel">The Jewel of the state</span></h1>
                 <button id="join">Join the Chamber</button>
             </section>
@@ -51,15 +57,27 @@
                     I don tell am Moto go jam you E don happen,</p>
             </section>
             <section class="weather">
-                <h2>Weather</h2>
-                <a class="weatherwidget-io" href="https://forecast7.com/en/6d216d70/asaba/" data-label_1="ASABA" data-label_2="WEATHER" data-theme="original" 
-                data-basecolor="#dfdfdd" data-textcolor="black" data-highcolor="#6B0504" data-mooncolor="white" data-cloudcolor="#2D4739" >ASABA WEATHER</a>
+                <!-- <div class="bg"></div> -->
+                <h2 id="blur_not">Weather</h2>
+                    <div class="widget">
+                        <img src="./images/cloudy-day-3.svg" class="icon" alt="weather icon">
+                        <div class="weather_info">
+                            <p class="weather_farenheit">
+                                <span id="temp">90</span> &#8457;
+                            </p>
+                            <p class="weatherDetails"><span id="speed">2</span> mph</p>
+                            <p class="weatherDetails">Wind chill: <span id="chill">N/A</span></p>       
+                        </div>
+                    </div>
+                    <p id="place">Asaba, Delta State</p>
+                <!-- <a class="weatherwidget-io" href="https://forecast7.com/en/6d216d70/asaba/" data-label_1="ASABA" data-label_2="WEATHER" data-theme="original" 
+                data-basecolor="#dfdfdd" data-textcolor="black" data-highcolor="#6B0504" data-mooncolor="white" data-cloudcolor="#2D4739" >ASABA WEATHER</a> -->
             </section>
-            <section class="join">
+            <div class="join">
                 <button id="sign_up">Sign Up</button>
                 <p>For The Asaba Chamber NewsletterDrop in your e-mail and you’ll be the first to know about exclusive events, deals and 
                     experiences across Asaba.</p>
-            </section>
+            </div>
             <section class="news">
                 <h2>News Release</h2>
                 <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo rerum ratione 
@@ -78,7 +96,7 @@
         </main>
         <footer>
             <div class="left_foot">
-                <img class='logo_header' src='../images/Chambers_logo.png' alt='Asaba chambers Logo'>
+                <img class='logo_header' src='./images/webPChambers_logo.webp' alt='Asaba chambers Logo'>
                 <p><span class="foot_sitename">Asaba  chamber of commerce</span><br>12 Nwaki street<br>Asaba, Delta state</p>
             </div>
             <div class="right_foot">
@@ -87,7 +105,7 @@
                 <div class="location">
                     <p id="location_map">Locatiom Map</p>
                     <a target="_blank" href='https://www.google.com/maps/dir//N+0,+Konwea+Shopping+Plaza,+383+Nnebisi+Road,+beside+Konwea+Street,+opposite+polaris+Bank,+Isieke+320242,+Asaba,+Nigeria/@6.2067153,6.6471861,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1043f393eff89ed5:0xbc041047c4ecc269!2m2!1d6.717227!2d6.2067199'>
-                        <img class='logo_footer' src='./images/googlemaps.png' alt='Asaba chambers Logo'></a>
+                        <img class='logo_footer' src='./images/googlemaps.png' alt='Google maps logo'></a>
                 </div>
             </div>
             <div class="bottomless">

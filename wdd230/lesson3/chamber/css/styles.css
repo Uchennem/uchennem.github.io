@@ -137,9 +137,36 @@ nav ul li:hover {
     grid-row: 2/3;
     grid-column: 1/2;
     border: 2px solid #6B0504;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 1, 1, 0.4);
     box-shadow: 5px 5px 10px rgba(0,0,0,0.8);
+    position: relative;
+    
+    
 }
+
+.widget {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+}
+
+.icon {
+    height: 100%;
+}
+
+/* .bg {
+    background-image: url(../images/rsz_asaba-2.jpg);
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:blur(20px);
+    -webkit-filter:blur(20px);
+} */
+
+
+
 .join {
     grid-row: 3/4;
     grid-column: 1/2;
@@ -176,6 +203,7 @@ nav ul li:hover {
     position: absolute;
     left: 10px;
     top: 10px;
+    color: #6B0504;
 }
 
 #jewel {
