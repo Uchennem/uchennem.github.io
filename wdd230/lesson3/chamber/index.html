@@ -41,12 +41,16 @@
 
         <main class="central">
             <section class="hero">
-                <img
+                <!-- <img
                     srcset="./images/240pxtinywdd230-org.jpg 240w, ./images/480pxtinywdd230-org.jpg 480w, ./images/800pxtinywdd230-org.jpg 800w"
                     sizes="(max-width: 400px) 240px, (max-width: 900px) 480px,
                             800px"
-                    src="elva-fairy-800w.jpg"
-                    alt="Elva dressed as a fairy">
+                    alt="Elva dressed as a fairy"> -->
+                    <picture>
+                        <source srcset="./images/800pxtinywdd230-org.jpg" media="(min-width:900px)">
+                        <source srcset="./images/480pxtinywdd230-org.jpg" media="(min-width:500px)">
+                        <img class="hero-image" src="./images/240pxtinywdd230-org.jpg" alt="hero image">
+                    </picture>
                 <h1>Welcome to Asaba<br><span id="jewel">The Jewel of the state</span></h1>
                 <button id="join">Join the Chamber</button>
             </section>
