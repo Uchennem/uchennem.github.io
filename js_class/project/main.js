@@ -159,4 +159,8 @@
   restartButton.addEventListener('click', resetBoard);
 
 
+  const date = new Date("24/10/2021")
+  const secondDate = new Date("07/11/2021")
 
+days = date.setDate(date.getTime() - secondDate.getTime());
+console.log(date.Now);
