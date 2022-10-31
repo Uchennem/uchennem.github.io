@@ -64,7 +64,7 @@ else {
 
 if (!localStorage.getItem('recentVisit')) {
     localStorage.setItem('recentVisit', Date.now());
-    document.getElementById('currentVisit').textContent = 'This is your first ';
+    document.getElementById('currentVisit').textContent = 'This is your first visit';
 } else {
     setStyles();
 }
@@ -77,7 +77,7 @@ function setStyles() {
         console.log(dayDifference);
         let actualDays = Math.floor(dayDifference/1000/3600/24);
 
-    document.getElementById('currentVisit').texContent = actualDays;
+    document.getElementById('currentVisit').texContent = "You last visit was " + actualDays + " days ago";
 
     localStorage.setItem('recentVisit', Date.now());
 }
