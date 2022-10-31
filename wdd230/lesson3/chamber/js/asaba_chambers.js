@@ -46,3 +46,57 @@ if ((temp <= 50) || (speed > 3))
 else{
     document.querySelector('#chill').textContent = 'N/A';
 }
+
+//discover page code
+const image = document.querySelectorAll('img');
+const pimages = document.querySelectorAll('.side_main');
+
+function preloadImage(img){
+    const source = img.getAttribute('.side_main');
+    if (!source) {
+        return;
+    }
+
+    img.src = source;
+}
+
+const io = new IntersectionObserver (
+    (entries, io) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return;
+            } else {
+                preloadImage(entry.target);
+                io.unobserve(entry.target);
+            }
+        })
+    },
+    {
+        threshold: [.4]
+    }
+);
+
+pimages.forEach(image => {
+    io.observe(image);
+})
+
+
+if (!localStorage.getItem('recentVisit')) {
+    localStorage.setItem('recentVisit', Date.now());
+    document.getElementById('currentVisit').textContent = 'This is your first ';
+} else {
+    setStyles();
+}
+
+function setStyles() {
+    let lastDate = localStorage.getItem('recentVisit');
+    let newDate = Date.now();
+
+    let dayDifference = newDate - lastDate;
+        console.log(dayDifference);
+        let actualDays = Math.floor(dayDifference/1000/60/60/24);
+
+    document.getElementById('currentVisit').texContent = actualDays;
+
+    localStorage.setItem('recentVisit', Date.now());
+}
