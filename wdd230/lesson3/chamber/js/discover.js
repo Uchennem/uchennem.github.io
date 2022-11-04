@@ -1,39 +1,30 @@
-
-//discover page code
-// const imagesToload = document.querySelectorAll("img[data-src]");
-
-// const imgOptions = {
-//     threshold: 0.5,
-//     rootMargin: "0px 0px 50px 0px"
-// };
-
-// const loadImages = (image) => {
-//     image.setAttribute('src', image.getAttribute('data-src'));
-//     image.onload = () => { image.removeAttribute('data-src'); };
-// };
-
-// if ('intersectionObserver' in window) {
-//     const imgObserver = new IntersectionObserver((items, observer) => {
-//         items.forEach((item) => {
-
-//         });
-//     }, imgOptions);
-
-//     imagesToload.forEach((img) => {
-//         imgObserver.observe(img)
-//     });
-// }
-
-// else {
-
-// }
-
-
 const image = document.querySelectorAll('img');
+
+// const io = new IntersectionObserver(
+//     (entries, io) => {
+//         entries.forEach(entry => {
+//             console.log(entries);
+//         })
+        
+//     }, 
+//     {
+//         threshold: [.5]
+//     }
+// )
+
+
+// image.forEach(image =>{
+//     io.observe(image);
+// })
+
 const pimages = document.querySelectorAll('[data-src]');
+const options = {
+    threshold: .5,
+    rootMargin: '0px 0px 100px 0px'
+}
 
 function preloadImage(img){
-    const source = img.getAttribute('[data-src]');
+    const source = img.getAttribute('data-src');
     if (!source) {
         return;
     }
@@ -41,25 +32,29 @@ function preloadImage(img){
     img.src = source;
 }
 
-const io = new IntersectionObserver (
+const io = new IntersectionObserver(
     (entries, io) => {
         entries.forEach(entry => {
-            if (!entry.isIntersecting) {
+            if(!entry.isIntersecting){
                 return;
-            } else {
+            }
+            else{
                 preloadImage(entry.target);
                 io.unobserve(entry.target);
             }
-        });
-    },
-    {
-        threshold: .5
-    }
+        })
+        
+    }, 
+    
+        options
+    
 );
 
-pimages.forEach(image => {
+pimages.forEach(image =>{
     io.observe(image);
 })
+
+
 
 function supriseMe() {
     let lastDate = localStorage.getItem('recentVisit');
