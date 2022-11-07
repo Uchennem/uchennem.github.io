@@ -55,14 +55,14 @@
                     <label for="business_name">Business Name*:</label>
                     <input id="business_name" name="businessname">
                     <label for="position_title">Business Position Title:</label>
-                    <input id="position_title" name="businesstitle"  type="text" pattern="^[A-Za-z -]+$">
+                    <input id="position_title" name="businesstitle"  type="text" pattern="^[A-Za-z -]+$" minlength="7">
                     <label for="membership">Membership Level:</label>
                     <select id="membership" name="memberLevel">
                         <option selected disabled hidden>Nothing Selected</option>
-                        <option>Gold Membership</option>
-                        <option>Silver Membership</option>
-                        <option>Bronze Membership</option>
-                        <option>NP Membership</option>
+                        <option value="gold">Gold Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="np">NP Membership</option>
                     </select>
                     <label for="description">Business Description:</label>
                     <textarea id="description" placeholder="Your business description"></textarea>
