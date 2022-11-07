@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This Asaba chamber of commerce website, join page">
-    <title>Asaba Chamber of Commerce</title>
+    <title>Asaba Chamber of Commerce Join</title>
     <link rel="stylesheet" href='../styles/normalize.css'>
     <link rel="stylesheet" href='./css/styles.css'>
     <link rel="favicon" href="./images/favicon.ico">
@@ -57,16 +57,16 @@
                     <label for="position_title">Business Position Title:</label>
                     <input id="position_title" name="businesstitle"  type="text" pattern="^[A-Za-z -]+$">
                     <label for="membership">Membership Level:</label>
-                    <select id="levels" name="memberLevel" value="" name="memberLevel">
-                        <option value="none" selected disabled></option>
-                        <option value="gold">Gold Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="np">NP Membership</option>
+                    <select id="membership" name="memberLevel">
+                        <option selected disabled hidden>Nothing Selected</option>
+                        <option>Gold Membership</option>
+                        <option>Silver Membership</option>
+                        <option>Bronze Membership</option>
+                        <option>NP Membership</option>
                     </select>
                     <label for="description">Business Description:</label>
                     <textarea id="description" placeholder="Your business description"></textarea>
-                    <input id="date" name="date" value="" type="hidden">
+                    <input id="join_date" name="join_date" value="" type="hidden">
                     <input id='submit' type="submit" value="Submit">
                 </form>
             </section>
