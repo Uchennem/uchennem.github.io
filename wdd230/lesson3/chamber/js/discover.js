@@ -66,7 +66,7 @@ function supriseMe() {
         document.querySelector('.currentVisit').textContent = 'This is your first visit';
     }
     else {
-        document.querySelector('#visit').textContent = "It's been " + actualDays + " since you last Visited";
+        document.querySelector('#visit').textContent = "It's been " + actualDays + " days since you last Visited";
     }
     localStorage.setItem('recentVisit', Date.now());
 }

@@ -126,6 +126,76 @@ nav ul li:hover {
     color: white; 
 }
 
+.central_join {
+    display: grid;  
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+ul {
+    display: block;
+    list-style-type: circle;
+    text-align: center;
+}
+
+
+#membership_form {
+    margin: 40px;
+    padding: 20px;
+    background-color: rgba(133, 47, 47, 0.4);
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.8);
+}
+
+#membership_details {
+    background-color: rgba(133, 47, 47, 0.4);
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+label, input {
+    display: block;
+    font-size: 1em;
+    padding: 4px 0px;
+    text-align: left;
+}
+
+#levels {
+    display: block;
+    font-size: 1em;
+    padding: 4px 20px;
+}
+
+#submit {
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #6B0504;
+    color: white;
+    padding: 4px 30px;
+    cursor: pointer;
+}
+
+#description {
+    
+    display: block;
+    font-size: 1em;
+    padding: 4px 40px;
+}
+
+#thank_you {
+    margin: 0 auto;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-shadow: 5px 5px 10px rgba(58, 9, 9, 0.8);
+    text-align: center;
+    padding: 90px 0px;
+}
+
 .event {
     grid-row: 1/2;
     grid-column: 1/2;
@@ -139,9 +209,7 @@ nav ul li:hover {
     border: 2px solid #6B0504;
     background-color: rgba(0, 1, 1, 0.4);
     box-shadow: 5px 5px 10px rgba(0,0,0,0.8);
-    position: relative;
-    
-    
+    position: relative;   
 }
 
 .widget {

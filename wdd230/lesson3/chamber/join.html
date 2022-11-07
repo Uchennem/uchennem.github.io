@@ -4,9 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="This Asaba chamber of commerce website, join page">
+    <title>Asaba Chamber of Commerce</title>
+    <link rel="stylesheet" href='../styles/normalize.css'>
+    <link rel="stylesheet" href='./css/styles.css'>
+    <link rel="favicon" href="./images/favicon.ico">
 </head>
 <body>
-    
+   <div class="content">
+        <header>
+            <div class="header_notes">
+                <a id= 'logo_link' href='index.html'>
+                <img class='logo_header' src='./images/webPChambers_logo.webp' alt='Asaba chambers Logo WebP'></a>
+                <p><span class="nav_sitename">Asaba</span><br> chamber of commerce</p>
+            </div>
+            <nav>
+                <button id="hamburger">&#9776;</button>
+                <ul id="primaryNav">
+                    <li> <a class="primary_nav" href='discover.html'>Discover</a> </li>
+                    <li> <a class="primary_nav" href='../site_plan/index.html'>Directory</a> </li>
+                    <li> <a class="primary_nav" href="join.html">Join</a> </li>
+                    <li> <a class="primary_nav" href="../site_plan/typography.html">Contact</a> </li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="./images/LinkedIn_icon.png" alt="linkedin icon">
+                </a>
+            </div>
+            <p id="date"><span class="full_date"></span></p>
+            <p id="bannertext">Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+        </header>
+
+        <main class="central_join">
+            <h1 id="heading_member">Membership Form</h1>
+            <h1 id="heading_levels">Membership Levels</h1>
+            <section id="membership_form">
+                <form method="get" action="thankyou.html">
+                    <label for="fname">First Name*:</label>
+                    <input id="fname" type="text" name="firstname" required>
+                    <label for="lname">Last Name*:</label>
+                    <input id="lname" type="text" name="lastname" required>
+                    <label for="email">Email*:</label>
+                    <input id="email" type="email" placeholder="myemail@example.com" name="email" required>
+                    <label for="phone_number">Phone Number*:</label>
+                    <input id="phone_number" type='tel' placeholder="08044599231" required>
+                    <label for="business_name">Business Name*:</label>
+                    <input id="business_name" name="businessname">
+                    <label for="position_title">Business Position Title:</label>
+                    <input id="position_title" name="businesstitle"  type="text" pattern="^[A-Za-z -]+$">
+                    <label for="membership">Membership Level:</label>
+                    <select id="levels" name="memberLevel" value="" name="memberLevel">
+                        <option value="none" selected disabled></option>
+                        <option value="gold">Gold Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="np">NP Membership</option>
+                    </select>
+                    <label for="description">Business Description:</label>
+                    <textarea id="description" placeholder="Your business description"></textarea>
+                    <input id="date" name="date" value="" type="hidden">
+                    <input id='submit' type="submit" value="Submit">
+                </form>
+            </section>
+            <section id="membership_details">
+                <div class="details">
+                    <h2>NP Membership</h2>
+                    <ul>
+                        <li>For non-profit members, there is no fee.</li>
+                    </ul>
+                </div>
+                <div class="details">
+                    <h2>Bronze Membership</h2>
+                    <ul>
+                        <li>15% discount on events</li>
+                        <li>10% discount on advertising</li>
+                        <li>Fee of $50/month</li>
+                    </ul>
+                </div>
+                <div class="details">
+                    <h2>Silver Membership</h2>
+                    <ul>
+                        <li>25% discount on events</li>
+                        <li>15% discount on advertising</li>
+                        <li>Free participation in the trade fair</li>
+                        <li>Fee of $100/month</li>
+                    </ul>
+                </div>
+                <div class="details">
+                    <h2>NP Membership</h2>
+                    <ul>
+                        <li>50% discount on events</li>
+                        <li>50% discount on advertising</li>
+                        <li>Free participation in the trade fair</li>
+                        <li>5 free featured ads per year</li>
+                        <li>1 free training per quarter</li>
+                        <li>Fee of $250/month</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="left_foot">
+                <img class='logo_header' src='./images/webPChambers_logo.webp' alt='Asaba chambers Logo'>
+                <p><span class="foot_sitename">Asaba  chamber of commerce</span><br>12 Nwaki street<br>Asaba, Delta state</p>
+            </div>
+            <div class="right_foot">
+                <p id="chamber_contacts">asabachambers@gmail.com<br>+2348107941100</p>
+
+                <div class="location">
+                    <p id="location_map">Locatiom Map</p>
+                    <a target="_blank" href='https://www.google.com/maps/dir//N+0,+Konwea+Shopping+Plaza,+383+Nnebisi+Road,+beside+Konwea+Street,+opposite+polaris+Bank,+Isieke+320242,+Asaba,+Nigeria/@6.2067153,6.6471861,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1043f393eff89ed5:0xbc041047c4ecc269!2m2!1d6.717227!2d6.2067199'>
+                        <img class='logo_footer' src='./images/googlemaps.png' alt='Google maps logo'></a>
+                </div>
+            </div>
+            <div class="bottomless">
+
+                <h3>&copy;<span class="year"></span> Asaba Chambers   |  Uche S. Oranye  | Rexburg<br> <span id="foot"></span> </h3>
+            </div>
+        </footer>
+   </div> 
+   <script src="js/asaba_chambers.js"></script>
 </body>
 </html>
