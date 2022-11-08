@@ -51,11 +51,11 @@
                     <label for="email">Email*:</label>
                     <input id="email" type="email" placeholder="myemail@example.com" name="email" required>
                     <label for="phone_number">Phone Number*:</label>
-                    <input id="phone_number" type='tel' placeholder="08044599231" required>
+                    <input id="phone_number" type='tel' placeholder="080-445-9231" required>
                     <label for="business_name">Business Name*:</label>
                     <input id="business_name" name="businessname">
                     <label for="position_title">Business Position Title:</label>
-                    <input id="position_title" name="businesstitle"  type="text" pattern="^[A-Za-z -]+$" minlength="7">
+                    <input id="position_title" name="businesstitle"  type="text" pattern="^[A-Za-z -]+" minlength="7">
                     <label for="membership">Membership Level:</label>
                     <select id="membership" name="memberLevel">
                         <option value="unchosen" hidden selected disabled>Nothing Selected</option>
@@ -127,6 +127,7 @@
             </div>
         </footer>
    </div> 
+   <script src="js/join.js"></script>
    <script src="js/asaba_chambers.js"></script>
 </body>
 </html>
