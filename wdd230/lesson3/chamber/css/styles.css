@@ -139,6 +139,12 @@ ul {
     text-align: center;
 }
 
+#membership {
+    display: block;
+    font-size: 1em;
+    padding: 4px 0px;
+}
+
 
 #membership_form {
     margin: 40px;
