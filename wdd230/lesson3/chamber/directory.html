@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This Asaba chamber of commerce website, join page">
-    <title>Asaba Chamber of Commerce Join</title>
+    <meta name="description" content="This Asaba chamber of commerce website, Directory page">
+    <title>Asaba Chamber of Commerce Directory</title>
+    <link rel="favicon" href="./images/favicon.ico">
     <link rel="stylesheet" href='../styles/normalize.css'>
     <link rel="stylesheet" href='./css/styles.css'>
-    <link rel="favicon" href="./images/favicon.ico">
+    <link rel="stylesheet" href='./css/directory.css'>
 </head>
 <body>
    <div class="content">
@@ -22,7 +23,7 @@
                 <button id="hamburger">&#9776;</button>
                 <ul id="primaryNav">
                     <li> <a class="primary_nav" href='discover.html'>Discover</a> </li>
-                    <li> <a class="primary_nav" href='../site_plan/index.html'>Directory</a> </li>
+                    <li> <a class="primary_nav" href='directory.html'>Directory</a> </li>
                     <li> <a class="primary_nav" href="join.html">Join</a> </li>
                     <li> <a class="primary_nav" href="../site_plan/typography.html">Contact</a> </li>
                 </ul>
@@ -39,8 +40,15 @@
             <p id="bannertext">Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
         </header>
 
-        <main class="central_join">
-            
+        <main class="central_directory">
+                <h1> Directory for Businesses</h1>
+                <div class="controls">
+                        <img class="list" src="images/list.png" alt="list button">
+                        <img class="grid" src="images/grid.png" alt="grid button">       
+                </div>
+                <div class="cards" ></div>
+                <div class="list_view displayNone" ></div>
+                
         </main>
         <footer>
             <div class="left_foot">
@@ -62,7 +70,7 @@
             </div>
         </footer>
    </div> 
-   <script src="js/join.js"></script>
+   <script src="js/directory.js"></script>
    <script src="js/asaba_chambers.js"></script>
 </body>
 </html>
