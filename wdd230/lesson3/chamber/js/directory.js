@@ -77,13 +77,9 @@ gridBox.addEventListener('click', showGrid);
 function showGrid(){
   list.classList.add('displayNone');
   grid.classList.remove('displayNone');
-  gridBox.classList.add('highlight');
-  listBox.classList.remove('highlight');
 }
 listBox.addEventListener('click', showList);
 function showList(){
   grid.classList.add('displayNone');
   list.classList.remove('displayNone');
-  listBox.classList.add('highlight');
-  gridBox.classList.remove('highlight');
 }
