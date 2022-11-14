@@ -38,3 +38,4 @@ function displayProphets(item) {
     document.querySelector('.cards').appendChild
         (card);
 };
+

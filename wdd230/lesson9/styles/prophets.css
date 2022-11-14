@@ -22,3 +22,21 @@ img {
     box-shadow: 5px 10px 8px 5px #888888;
 }
 
+@media only screen and (min-width: 400px){
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    
+}
+
+@media only screen and (min-width: 700px){
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+}
