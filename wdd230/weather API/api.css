@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Zen+Antique&display=swap');
+
+body {
+    font-family: lato;
+    text-align: center;
+}
+
+.weather_details {
+    border: 1px solid rgba(0,0,0,0.2);
+    background-color: rgba(133, 47, 47, 0.4);
+}
+
+img {
+    width: 200px;
+}
+
