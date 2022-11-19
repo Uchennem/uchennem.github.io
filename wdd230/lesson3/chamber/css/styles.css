@@ -227,6 +227,7 @@ label, input {
 
 .icon {
     height: 100%;
+    margin-bottom: -30px;
 }
 
 /* .bg {
