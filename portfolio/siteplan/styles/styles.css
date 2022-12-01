@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+body {
+    font-family: "Open Sans", monospace, sans-serif;
+    background-color: #D7DEDC;
+}
+#content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Lato, monospace, sans-serif;
+}
+
+header nav {
+    margin-top: 10px;
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    transition: transform .5s;
+    padding-top: 1vh;
+    font-family: lato, monospace, sans-serif;
+    font-weight: bold;
+}
+
+.logo {
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.logo_header {
+    width: 26px;
+    border-radius: 50%;
+}
+
+nav a:hover {
+    transition: transform .5s;
+    color: #6B0504;
+    opacity: .6;
+    transform: scale(1.5);
+}
+
+.domain_name {
+    color: #6B0504;
+    font-weight: bold;
+}
+
+:root {
+    --primary-color: #201D1D;
+    --secondary-color: #ffff;
+    --accent1-color: #00F5C0;
+}
+
+#target_audience {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.employer, .visitor {
+    border: 2px solid black;
+}
+
+.audience {
+    width: 200px
+}
+
+.wireframe {
+    width:250px;
+    margin: 0 auto;
+}
+
+.sitemap {
+    max-width:700px;
+}
+
+.mapborder { 
+    border: 2px solid #6B0504;
+}
+
+.views {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+
+
+@media screen and (max-width: 800px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+    }
+    
+    #target_audience {
+        display: flex;
+        flex-direction: column;
+    }
+    .employer, .visitor {
+        flex: 1 1 100%;
+    }
+    tbody {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .table_1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table_1 th {
+        border: 1px solid black;
+    }
+
+    .table_2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table_2 td {
+        border: 1px solid black;
+    }
+
+    .colors td {
+        width: auto;
+        height: auto;
+    }
+
+    .logo_header {
+        display: none;
+    }
+
+    .sitemap {
+        max-width:300px;
+    }
+
+    .logo {
+        max-width: 400px;
+        width: 60%;
+    }
+
+    .views {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
