@@ -252,14 +252,13 @@ footer {
     
     #primaryNav a:hover {
         color: #00F5C0;
-        transition: none;
+        transition: transform .5s;
         opacity: 1;
         transform: scale(0.0);
     }
 
     #primaryNav {
-        display: none;
-        
+        display: none; 
     }
 
     .social {
@@ -282,7 +281,7 @@ footer {
   
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
 
     #hamburger {
         text-align: left;
