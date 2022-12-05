@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This Asaba chamber of commerce website, index page">
+    <title>Uche's Portfolio</title>
+    <link rel="stylesheet" href='../styles/normalize.css'>
+    <link rel="stylesheet" href='./styles/main.css'>
+    <link rel="favicon" href="./images/favicon.ico">
+</head>
+<body>
+   <div class="content">
+        <header>
+            <div class="header_notes">
+                <a id= 'logo_link' href='index.html'>
+                <img class='logo_header' src='images/logo_wolf.png' alt="Uche's Portfolio Logo WebP"></a>
+                <p><span class="nav_sitename">U.O</span></p>
+            </div>
+            <nav> 
+                <button id="hamburger">&#9776;</button>
+                <ul id="primaryNav">
+                    <li> <a class="primary_nav" href='index.html'>Home</a> </li>
+                    <li> <a class="primary_nav" href='https://facebook.com'>About</a> </li>
+                    <li> <a class="primary_nav" href="#">Projects</a> </li>
+                    <li> <a class="primary_nav" href="#">Contact Me</a> </li>
+                </ul>
+            </nav>
+            <div class="social">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="./images/LinkedIn_icon.png" alt="linkedin icon">
+                </a>
+            </div>
+            <p id="date"><span class="full_date"></span></p>
+        </header>
+
+        <main class="central">
+            <section class="hero">
+                <div class="main_img">
+                    <picture>
+                        <source srcset="images/akod.jpg" media="(min-width:900px)">
+                        <source srcset="images/rsz_akod_480.jpg" media="(min-width:500px)">
+                        <img class="hero-image" src="images/rsz_akod_240.jpg" alt="Uche Oranye">
+                    </picture>
+                </div>
+            </section>
+            <section class="brief_intro">
+                <p>Hello there! My name is</p>
+                <h1>Uche Oranye</h1>
+                <p class="highlight">Aspiring web developer and software designer.</p>
+                <p>I am currently studying software engineering at Brigham Young University-Idaho</p>
+                <button id="resume_btn">Resume</button>
+            </section>
+        </main>
+        <footer>
+            <div class="left_foot">
+                <img class='logo_header' src='images/logo_wolf.png' alt="Uche's Portfolio Logo">
+                <p><span class="foot_sitename">Uche's portfolio</span><br>Rexburg, Idaho</p>
+            </div>
+            <div class="right_foot">
+                <p id="uche_contacts">uchesoranye@gmail.com<br>986-497-8086</p>
+            </div>
+            <div class="bottomless">
+                <h3>&copy;<span class="year"></span> Uche's Portfolio   |  Uche S. Oranye  | Rexburg<br> <span id="foot"></span> </h3>
+            </div>
+        </footer>
+   </div> 
+   <script src="js/main.js"></script>
+</body>
+</html>
