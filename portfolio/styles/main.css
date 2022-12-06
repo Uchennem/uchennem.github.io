@@ -323,6 +323,16 @@ footer {
         text-align: right;
     }
   
+    /* about me page */
+
+    .casual_me, .professional_me {
+        display: flex;
+        flex-direction: column;
+        margin: 0 5%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 480px) {
