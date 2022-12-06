@@ -156,7 +156,6 @@ nav ul li:hover {
 
 .main_img {
     margin-right: 15%;
-    
     align-self: center;
 }
 
@@ -210,6 +209,51 @@ footer {
     grid-row: 2/3;
 }
 
+/* about me page */
+.casual_me, .professional_me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.professional_me {
+    padding-top: 2.5%;
+    border-top: 2px solid #00F5C0;
+
+}
+
+.casual_me img, .professional_me img {
+    width: 75%;
+    border: 2px solid #00F5C0;
+    box-shadow:  5px 5px 10px#00F5C0;
+    grid-column: 2/3;
+    margin-bottom: 5%;
+}
+
+.casual_me p, .professional_me p {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-right: 2%;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+.parable {
+    color: #00F5C0;
+}
+
+.professional_me img{
+    grid-column: 1/2;
+}
+
+.professional_me p{
+    grid-column: 2/3;
+}
+
+
 @media screen and (max-width: 900px) {
 
     #hamburger {
@@ -253,8 +297,8 @@ footer {
     #primaryNav a:hover {
         color: #00F5C0;
         transition: transform .5s;
-        opacity: 1;
-        transform: scale(0.0);
+        opacity: .8;
+        transform: scale(0.9);
     }
 
     #primaryNav {
