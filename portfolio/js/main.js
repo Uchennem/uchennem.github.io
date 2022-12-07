@@ -13,3 +13,9 @@ function toggleMenu() {
 }
 const clickChecker = document.getElementById("hamburger")
 clickChecker.onclick = toggleMenu;
+
+// For the join page
+
+const fulldate = new Date();
+const dated = document.querySelector('#join_date');
+dated.value = fulldate;
