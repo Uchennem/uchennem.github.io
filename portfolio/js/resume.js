@@ -1,3 +1,12 @@
+// This function creates a hamburger menu on clicking the side bar
+function toggleMenu() {
+    document.getElementById("primaryNav").classList.toggle("open");
+    console.log("it worked")
+}
+const clickChecker = document.getElementById("hamburger")
+clickChecker.onclick = toggleMenu;
+
+
 // This does calculation for temp and wind chill
 let temp = document.querySelector('#temp').textContent;
 let speed = document.querySelector('#speed').textContent;
