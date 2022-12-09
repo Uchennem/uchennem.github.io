@@ -9,6 +9,8 @@
     <link rel="favicon" href="images/favicon.ico">
     <link rel="stylesheet" href='styles/normalize.css'>
     <link rel="stylesheet" href='styles/main.css'>
+    <link rel="stylesheet" href='styles/resume.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
    <div class="content">
@@ -30,27 +32,47 @@
             <div class="social">
                 <a href="https://linkedin.com/in/ucheoranye" target="_blank">
                     <img src="images/LinkedIn_icon.png" alt="linkedin icon"></a>
+                    <p id="date"><span class="full_date"></span></p>
             </div>
-            <p id="date"><span class="full_date"></span></p>
         </header>
 
-        <main class="central">
-            <section class="hero">
-                <div class="main_img">
-                    <picture>
-                        <source srcset="images/akod.jpg" media="(min-width:900px)">
-                        <source srcset="images/rsz_akod_480.jpg" media="(min-width:500px)">
-                        <img class="hero-image" src="images/rsz_akod_240.jpg" alt="Uche Oranye">
-                    </picture>
+        <main class="resume">
+            <div class="your_weather">
+                <div class="date-container">
+                    <div class="time" id="time">
+                        12:30 <span id="am-pm">PM</span>
+                    </div>
+                    <div class="wrap">
+                        <div class="search">
+                           <input type="text" class="searchTerm"  id="cityInput" placeholder="Enter a city">
+                           <button type="submit" class="searchButton" id="searchBtn">
+                             <i class="fa fa-search"></i>
+                          </button>
+                        </div>
+                    </div>  
+                    
+                    <div class="weather-forecast" id="weather-forecast">
+                        <div class="future-forecast">
+                            <div class="today" id="current-temp">
+                                <figure><img src="" class="icon" alt="weather icon"><figcaption></figcaption></figure>
+                                <div class="other">
+                                    <div class="day">Monday</div>
+                                    <div class="temp"> <span id="temp"></span> &#8457;</div>
+                                    <p class="weatherDetails"><span id="speed"></span> mph</p>
+                                    <p class="weatherDetails">Wind chill: <span id="chill">N/A</span></p>   
+                                    <p class="highlight" id="cityName">Asaba</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
                 </div>
-            </section>
-            <section class="brief_intro">
-                <p>Hello there! My name is</p>
-                <h1>Uche Oranye</h1>
-                <p class="highlight">Aspiring web developer and software designer.</p>
-                <p>I am currently studying software engineering at Brigham Young University-Idaho</p>
-                <a href="resume.html"><button id="resume_btn">View Resume</button></a>
-            </section>
+            <div class="resume">
+                <h1>Uche's Resume</h1>
+                
+                <a href="images/resume.png" target="_blank">
+                    <img class="fancy_border"  src="images/resume.png" alt="uche's resume"></a>
+            </div>
         </main>
         <footer>
             <div class="left_foot">
@@ -64,7 +86,8 @@
                 <h3>&copy;<span class="year"></span> Uche's Portfolio   |  Uche S. Oranye  | Rexburg<br> <span id="foot"></span> </h3>
             </div>
         </footer>
-   </div> 
+   </div>
+   <script src="js/resume.js"></script>
    <script src="js/main.js"></script>
 </body>
 </html>

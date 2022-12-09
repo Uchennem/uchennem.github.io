@@ -23,6 +23,7 @@ header {
     font-weight: bold;
     font-family: lato, monospace, sans-serif;
     margin: 10px 0px;
+    
 }
 
 header p {
@@ -229,6 +230,7 @@ footer {
         justify-content: space-evenly;
         font-weight: bold;
         font-family: lato, monospace, sans-serif;
+        
     }
 
     header p {
