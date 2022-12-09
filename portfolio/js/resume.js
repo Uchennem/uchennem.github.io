@@ -4,13 +4,17 @@ let speed = document.querySelector('#speed').textContent;
 let chill;
 
 const timeEl = document.getElementById('time');
+const dayName = document.getElementById('day')
 const date = new Date();
+const day = date.getDay();
 const hour = date.getHours();
 const hoursIn12HrFormat = hour >= 13 ? hour %12: hour
 const minutes = date.getMinutes();
 const ampm = hour >= 12 ? 'PM' : 'AM'
-timeEl.innerHTML = (hoursIn12HrFormat < 10 ? '0' + hoursIn12HrFormat : hoursIn12HrFormat) + ':' + (minutes < 10 ? '0' + minutes : minutes) + ' ' + `<span id="am-pm">${ampm}</span>`;
 
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+timeEl.innerHTML = (hoursIn12HrFormat < 10 ? '0' + hoursIn12HrFormat : hoursIn12HrFormat) + ':' + (minutes < 10 ? '0' + minutes : minutes) + ' ' + `<span id="am-pm">${ampm}</span>`;
+dayName.innerHTML = days[day]
 
 let newCity = document.getElementById("cityInput");
 let cityName = document.getElementById("cityName");
