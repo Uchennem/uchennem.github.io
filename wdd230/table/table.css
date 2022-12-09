@@ -8,6 +8,7 @@ tr:nth-child(odd) {
 
 thead th {
     background-color: pink;
+    padding: 5px 7px 10px;
 }
 
 td, th {
@@ -21,4 +22,13 @@ table, td, th {
 
 tbody tr:nth-child(3){
     font-style: italic;
+}
+
+.three-col {
+    display: grid;
+    grid-template-columns: 250px 2fr 1fr;
+    grid-gap: 40px;
+    align-content: center;
+    align-items: center;
+
 }

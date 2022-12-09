@@ -140,10 +140,25 @@ figcaption {
     }
 
     .wrap {
-        padding-right: 30%;
-        margin-bottom: 5%;
+        padding-right: 0px;
+        display: flex;
+        width: 100%;
     }
 
+    .search {
+        margin: 0 auto;
+        display: inline;
+    }
+     
+    button, input {
+        overflow: hidden;
+    }
+
+    .searchTerm {
+        margin-right: 0;
+    }
+
+    
 }
 
 
